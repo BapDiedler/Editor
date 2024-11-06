@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éditeur de texte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barre de menu -->
+    <div class="menu-bar">
+        <button id="openFileButton">Ouvrir un fichier</button>
+        <button id="saveButton">Sauvegarder en local</button>
+        <button id="downloadButton">Télécharger</button>
+        <!-- Input caché pour sélectionner le fichier à ouvrir -->
+        <input type="file" id="fileInput" accept=".txt" style="display: none;">
+    </div>
+
+    <div class="container">
+        <!-- Colonne de gauche (pour un menu, titre, ou autre) -->
+        <div class="left-column">
+            <h1>Éditeur de Texte</h1>
+            <p>Utilisez cet éditeur pour écrire et sauvegarder vos notes.</p>
+        </div>
+        
+        <!-- Colonne de droite pour l'éditeur de texte -->
+        <div class="right-column">
+            <div class="editor-container">
+                <textarea id="editor" placeholder="Écris ton texte ici..."></textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lien vers le fichier JavaScript externe -->
+    <script src="script.js"></script>
+
+</body>
+</html>
